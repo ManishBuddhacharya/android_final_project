@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.onlinevotingsystem">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MemberForMemberActivity" />
+        <activity android:name=".PositionForMemberActivity" />
+        <activity android:name=".CandidateForMemberActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".VoteResultActivity" />
+        <activity android:name=".ResultActivity" />
+        <activity android:name=".VotingActivity" />
+        <activity android:name=".EditCandidateActivity" />
+        <activity android:name=".AddCandidateActivity" />
+        <activity android:name=".EditMemberActivity" />
+        <activity android:name=".AddMemberActivity" />
+        <activity
+            android:name=".MemberActivity"
+            android:label="@string/title_activity_member"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CandidateActivity"
+            android:label="@string/title_activity_candidate"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".EditPositionActivity" />
+        <activity android:name=".VoteActivity" />
+        <activity android:name=".AddPositionActivity" />
+        <activity
+            android:name=".PositionActivity"
+            android:label="@string/title_activity_position"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".DashboardActivity" />
+        <activity android:name=".MainActivity">
+
+        </activity>
+    </application>
+
+</manifest>

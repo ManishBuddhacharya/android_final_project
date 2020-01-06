@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/border_bottom"
+    android:layout_marginBottom="10dp"
+    android:paddingBottom="7dp">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgCandidatePic"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/member"
+        android:layout_marginTop="5dp"
+        android:layout_row="0"
+        android:layout_column="11" />
+
+    <TextView
+        android:id="@+id/tvCandidateName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/imgCandidatePic"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        android:layout_row="0"
+        android:layout_column="12" />
+
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="37dp"
+        android:layout_height="32dp"
+        android:layout_row="0"
+        android:layout_column="16"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@android:drawable/ic_menu_delete"
+        android:drawableTint="#FABE0B0B"
+        android:paddingLeft="5dp"
+        android:textColorHighlight="#FABE0B0B"
+        android:textColorLink="#FABE0B0B"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="37dp"
+        android:layout_height="32dp"
+        android:layout_row="0"
+        android:layout_column="15"
+        android:layout_marginRight="5dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@android:drawable/ic_menu_edit"
+        android:drawablePadding="5dp"
+        android:drawableTint="#fff"
+        android:minHeight="35dip"
+        android:padding="5dp"
+        android:textColorHighlight="#fff"
+        android:textColorLink="#fff"
+        android:textSize="10sp" />
+
+
+</GridLayout>
+

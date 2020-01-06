@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingTop="56dp"
+    android:paddingRight="10dp"
+    >
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-thin"
+            android:text="Voting Result of "
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:id="@+id/tvHeading"
+            android:textStyle="bold" />
+        <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border_bottom"
+            android:layout_marginBottom="10dp"
+            android:paddingBottom="7dp">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/imgCandidate"
+                    android:text="Candidate Name"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="119dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="6"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="right"
+                    android:layout_toRightOf="@+id/imgCandidate"
+                    android:text="Votes"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+
+        </GridLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvResult"
+            android:layout_width="match_parent"
+            android:layout_height="480dp"
+            android:layout_margin="20dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+
+
+</android.support.v7.widget.LinearLayoutCompat>
